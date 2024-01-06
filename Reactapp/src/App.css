@@ -1,0 +1,95 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Karla&family=Poppins:ital,wght@1,300&display=swap');
+
+@keyframes slide-in {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+  }
+@keyframes slide-up{
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}
+@keyframes fade-inside{
+     from{opacity: 0; display: none;}
+     to{opacity: 1;}
+    }
+@keyframes fade-in{
+  0%,100% {opacity: 0; }
+  50%{opacity: 1;  }
+}
+
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+.slideup{
+  animation: slide-up 2s ease-in-out;
+}
+.trans{
+   transition: transform 0.3s ease-in-out, 
+   
+}
+.trans :hover{
+  transform: translateY(-20px);
+
+}
+body{
+  background-image: url(./images/flat-lay-notebook-with-list-desk.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Inter', sans-serif;
+font-family: 'Karla', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+.fadingdiv{
+  animation: fade-inside 2s ease-in-out;
+  
+}
+
+
+.sliding-text {
+    animation: slide-in 0.5s ease-in-out;
+    
+  }
+  .message{
+    position:fixed;
+    
+    top:20px;
+    right:50%;
+    border-radius: 30px;
+    padding-top:10px;
+    padding-bottom :3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    transform: translate(50%, 10%);
+   
+  }
+  .fw-400X2{
+    font-weight: 800;
+  }
+
+  .fade {
+    opacity: 0;
+  }
+  .icon{
+    position: absolute;
+    font-size: 25px;
+  }
+  @media (max-width: 768px) {
+    
+    .specialdisplay{
+      font-size: 15px;
+    }
+    .extraspecialdisplay{
+      font-size: 8px;
+    }
+  }
