@@ -3,7 +3,8 @@ import {Loginpage} from "./components/Navbar";
 import { Homepage } from "./components/Homepage";
 import "react-bootstrap"
 import "./App.css"
-import { BrowserRouter, Route ,Routes } from "react-router-dom";
+import { HashRouter, Route ,Routes } from "react-router-dom";
+
 import { Create } from "./components/createtask";
 
 import {Protectedroute,AlreadyLoggedin} from "./components/Protectedroutings"
@@ -18,7 +19,7 @@ const App =() =>{
 
   return(
        
-         <BrowserRouter>
+         <HashRouter>
             <Refresh>
                 <Routes>
                     <Route path="/" element={<AlreadyLoggedin><Loginpage/> </AlreadyLoggedin>}/>
@@ -30,7 +31,7 @@ const App =() =>{
                     <Route path="/Logout" element={<Protectedroute ><Logout/></Protectedroute>} />
                </Routes>
             </Refresh>
-          </BrowserRouter>
+          </HashRouter>
   
     
   )
