@@ -32,7 +32,7 @@ export const Create = () => {
 
     }
     const SubmitForm = async(accesstoken) => {
-      const url = 'http://127.0.0.1:8000/api/tasks/'
+      const url = 'https://django-reactapp-production.up.railway.app/api/tasks/'
       const headers = new Headers()
       headers.set('Authorization', `Bearer ${accesstoken}`)
       headers.set('Content-Type', 'application/json')

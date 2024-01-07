@@ -22,7 +22,7 @@ export const Edittask = () => {
       const [form, formchange] = React.useState({name : '', description: "", is_complete:""})
       
       const Gettask = async(id, accesstoken) => {
-          let url = `http://127.0.0.1:8000/api/task/${id}/`
+          let url = `https://django-reactapp-production.up.railway.app/api/task/${id}/`
           let headers = new Headers()
           headers.set('Authorization', `Bearer ${accesstoken}`)
           headers.set('Content-Type', 'application/json')
@@ -45,7 +45,7 @@ export const Edittask = () => {
           }
       }
       const SubmitForm = async(accesstoken,id) => {
-        const url = `http://127.0.0.1:8000/api/task/${id}/`
+        const url = `https://django-reactapp-production.up.railway.app/api/task/${id}/`
         const headers = new Headers()
         headers.set('Authorization', `Bearer ${accesstoken}`)
         headers.set('Content-Type', 'application/json')

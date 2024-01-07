@@ -33,7 +33,7 @@ export const AllTask= () =>{
        
        const Gettask = async(accesstoken) => {
         setisloading(true)
-        let url = `http://127.0.0.1:8000/api/alltasks/`
+        let url = `https://django-reactapp-production.up.railway.app/api/alltasks/`
  
         let  headers = {
           Authorization: `Bearer ${accesstoken}`,
@@ -99,13 +99,13 @@ export const AllTask= () =>{
          </div>
      }
       
-       React.useEffect(async() => {
+       React.useEffect(() => {
         let access = auth.access
         if (access === null){
           access = localStorage.getItem('accesstoken')
          }
       
-         await Gettask(access)
+          Gettask(access)
        }, [])
 
 
@@ -117,7 +117,7 @@ export const AllTask= () =>{
         <div className="w-100 bg-primary bg-gradient" style={{}}>
             <Container className="p-4" style={{height:"100vh"}}>
             <div className="w-100 text-center text-light p-5 fadingdiv" style={{height: "85vh", boxShadow:"1px 1px 1px 3px rgba(0, 0, 0, 0.1)", borderRadius : "30px", backgroundColor:"rgba(255, 255, 255, 0.6)", position: "relative"}}>
-            <div className="icon" onClick={clickicon}><i class="bi bi-arrow-left"></i></div>
+            <div className="icon" onClick={clickicon}><i className="bi bi-arrow-left"></i></div>
              <div className="fadingdiv">
                   <h1 className="display-6"><i className="bi bi-stars"></i></h1>
                     <h1 className="display-6 specialdisplay">Here's your Todo </h1>

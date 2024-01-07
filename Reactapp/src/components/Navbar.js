@@ -209,7 +209,7 @@ const Login = () =>{
             let email = Loginform.email
             let password = Loginform.password
             const headers = new Headers()
-            let url = `http://127.0.0.1:8000/api/Login/`
+            let url = `https://django-reactapp-production.up.railway.app/api/Login/`
             headers.set("Content-Type","application/json")
             const  header ={
                method : "POST",
@@ -227,7 +227,7 @@ const Login = () =>{
 }
         else{
             let {email,username,password,password1} = Loginform
-            let url = `http://127.0.0.1:8000/api/Register/`
+            let url = `https://django-reactapp-production.up.railway.app/api/Register/`
             const headers = new Headers()
             headers.set("Content-Type","application/json")
             let header = {
