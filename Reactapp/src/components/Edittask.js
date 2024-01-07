@@ -118,12 +118,12 @@ export const Edittask = () => {
         <div className="w-100  text-light p-5 fadingdiv" style={{height: "85vh", boxShadow:"1px 1px 1px 3px rgba(0, 0, 0, 0.1)", borderRadius : "30px", backgroundColor:"rgba(255, 255, 255, 0.6)"}}>
          <div className="fadingdiv py-4 text-center">
               <h1 className="display-6"><i className="bi bi-stars"></i></h1>
-                <h1 className="display-6 specialdisplay">Create A Todo </h1>
+                <h1 className="display-6 specialdisplay">Edit A Todo </h1>
          </div>
         
          <div className="d-lg-flex   bg-light p-2" style={{overflowY:"auto", height:"70%", borderRadius:"10px"}}>
           <div className="w-100 px-5 py-3 text-dark specialdisplay" >
-             <h1 className="h4 fw-400X2 specialdisplay ">Add a new Todo :</h1>
+             <h1 className="h4 fw-400X2 specialdisplay ">Edit Todo :</h1>
              <Form className="pt-4" >
              <Col sm="6" className={`${nameempty? 'd-block' : 'd-none'}`}>
         <p className="text-center text-danger">Field is empty</p>
