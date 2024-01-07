@@ -58,7 +58,7 @@ ROOT_URLCONF = 'Backend.urls'
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'http://192.168.91.28:3000',
-    "http://marveldo.github.io"
+    "https://marveldo.github.io"
 ]
 
 TEMPLATES = [
