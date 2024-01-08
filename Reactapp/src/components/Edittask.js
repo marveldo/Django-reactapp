@@ -20,7 +20,7 @@ export const Edittask = () => {
       const [loading, setloading] = React.useState(false)
       const navigate = useNavigate()
       const [form, formchange] = React.useState({name : '', description: "", is_complete:""})
-      
+      const spinner = <Spinner animation="border" role="status"><span className="visually-hidden">Loading...</span></Spinner> 
       const Gettask = async(id, accesstoken) => {
           let url = `https://django-reactapp-production.up.railway.app/api/task/${id}/`
           let headers = new Headers()
@@ -167,7 +167,7 @@ export const Edittask = () => {
   </Form.Group>
           
   <div className="w-100 d-flex justify-content-end">
-     <input type="submit" onClick={HandleSubmit} className={`btn btn-outline-primary me-3 ${loading ? 'disabled' : '' }`} value={loading ?  <Spinner animation="border" role="status"><span className="visually-hidden">Loading...</span></Spinner> : 'Save' }/>
+     <input type="submit" onClick={HandleSubmit} className={`btn btn-outline-primary me-3 ${loading ? 'disabled' : '' }`} value={loading ? spinner : 'Save' }/>
      <input type="button" className="btn btn-outline-dark" value='Cancel' onClick={Clickcancel}/>
   </div>
    
