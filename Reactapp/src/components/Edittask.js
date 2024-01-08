@@ -167,7 +167,8 @@ export const Edittask = () => {
   </Form.Group>
           
   <div className="w-100 d-flex justify-content-end">
-     <input type="submit" onClick={HandleSubmit} className={`btn btn-outline-primary me-3 ${loading ? 'disabled' : '' }`} value={loading ? spinner : 'Save' }/>
+  
+     <button onClick={HandleSubmit} className={`btn btn-outline-primary me-3 ${loading ? 'disabled' : '' }`} >{loading ? spinner : 'Save' }</button>
      <input type="button" className="btn btn-outline-dark" value='Cancel' onClick={Clickcancel}/>
   </div>
    
