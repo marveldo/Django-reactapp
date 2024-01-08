@@ -17,7 +17,7 @@ export const Create = () => {
     const [loading, setloading] = React.useState(false)
     const auth = useAuth()
     const navigate = useNavigate()
-    
+    const spinner = <Spinner animation="border" role="status"><span className="visually-hidden">Loading...</span></Spinner>
     const handlechange = (event) => {
     const {name,value} = event.target
       setnameempty(false)
@@ -126,7 +126,7 @@ export const Create = () => {
         <Col sm="4">
         <Form.Select name="is_complete" onChange={handlechange}  aria-label="Default select example">
         
-           <option>{form.is_complete ? 'Yes' : 'No'}</option>
+           <option>{form.is_complete}</option>
             <option value="true">Yes</option>
             <option value="false">No</option>
        
@@ -136,7 +136,7 @@ export const Create = () => {
       </Form.Group>
               
       <div className="w-100 d-flex justify-content-end">
-         <input type="submit" className={`btn btn-outline-primary me-3 ${loading ? 'disabled' : '' }`} value={loading ?  <Spinner animation="border" role="status"><span className="visually-hidden">Loading...</span></Spinner> : 'Save' }/>
+         <input type="submit" className={`btn btn-outline-primary me-3 ${loading ? 'disabled' : '' }`} value={loading ? spinner  : 'Save' }/>
          <input type="button" className="btn btn-outline-dark" value='Cancel' onClick={Clickcancel}/>
       </div>
        
