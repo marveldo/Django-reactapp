@@ -157,9 +157,9 @@ export const Edittask = () => {
     <Col sm="4">
     <Form.Select name="is_complete" onChange={handlechange}  aria-label="Default select example">
     
-       <option>{form.is_complete ? 'True' : 'False'}</option>
-        <option value="true">True</option>
-        <option value="false">False</option>
+       <option>{form.is_complete ? 'Yes' : 'No'}</option>
+        <option value="true">Yes</option>
+        <option value="false">No</option>
    
     
   </Form.Select>
