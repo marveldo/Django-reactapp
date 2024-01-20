@@ -48,7 +48,7 @@ export const Create = () => {
         const response = await fetch(url,header)
         const data = await response.json()
         if(data.status === 201){
-          navigate('/Todo')
+          navigate('/Todo',{replace:true})
         }
 
       }
@@ -77,7 +77,7 @@ export const Create = () => {
       }
     }
     const Clickcancel = () =>{
-      navigate('/Todo')
+      navigate('/Todo', {replace:true})
     }
 
 

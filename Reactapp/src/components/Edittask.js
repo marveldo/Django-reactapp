@@ -86,7 +86,7 @@ export const Edittask = () => {
     
         }
     const Clickcancel = () =>{
-        navigate('/Todo')
+        navigate('/Todo',{replace: true})
       }
       const HandleSubmit = (event) => {
         const id = Id.taskId
