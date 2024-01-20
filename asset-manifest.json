@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Django-reactapp/static/css/main.c53a63b1.css",
-    "main.js": "/Django-reactapp/static/js/main.b75294d6.js",
+    "main.js": "/Django-reactapp/static/js/main.cf760ff4.js",
     "static/media/flat-lay-notebook-with-list-desk.jpg": "/Django-reactapp/static/media/flat-lay-notebook-with-list-desk.5ba69b6ccda04972f6ee.jpg",
     "static/media/bootstrap-icons.woff?": "/Django-reactapp/static/media/bootstrap-icons.66b7720f4a230f1b0341.woff",
     "static/media/bootstrap-icons.woff2?": "/Django-reactapp/static/media/bootstrap-icons.64ed46b247405068ca60.woff2",
     "static/media/360_F_259317013_nJJaBgGGzvXMd6cAyLd6yMJtbdnd61wk.jpg": "/Django-reactapp/static/media/360_F_259317013_nJJaBgGGzvXMd6cAyLd6yMJtbdnd61wk.ad4eb5b43788de0239b8.jpg",
     "index.html": "/Django-reactapp/index.html",
     "main.c53a63b1.css.map": "/Django-reactapp/static/css/main.c53a63b1.css.map",
-    "main.b75294d6.js.map": "/Django-reactapp/static/js/main.b75294d6.js.map"
+    "main.cf760ff4.js.map": "/Django-reactapp/static/js/main.cf760ff4.js.map"
   },
   "entrypoints": [
     "static/css/main.c53a63b1.css",
-    "static/js/main.b75294d6.js"
+    "static/js/main.cf760ff4.js"
   ]
 }
