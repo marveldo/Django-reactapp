@@ -79,9 +79,9 @@ export const Refresh = ({children}) => {
     },[])
     React.useEffect(()=>{
       const refreshtoken  = localStorage.getItem('refreshtoken')
-      const Interval = setInterval(async()=>{
+      const Interval = setInterval(()=>{
           if(refreshtoken){
-            await  refresh(refreshtoken)
+             refresh(refreshtoken)
 
           }
          setShouldTriggerEffect(prev => !prev)
