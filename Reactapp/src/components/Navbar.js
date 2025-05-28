@@ -209,7 +209,7 @@ const Login = () =>{
             let email = Loginform.email
             let password = Loginform.password
             const headers = new Headers()
-            let url = `https://django-reactapp-production.up.railway.app/api/Login/`
+            let url = `https://django-reactapp.vercel.app/api/Login/`
             headers.set("Content-Type","application/json")
             const  header ={
                method : "POST",
@@ -227,7 +227,7 @@ const Login = () =>{
 }
         else{
             let {email,username,password,password1} = Loginform
-            let url = `https://django-reactapp-production.up.railway.app/api/Register/`
+            let url = `https://django-reactapp.vercel.app/api/Register/`
             const headers = new Headers()
             headers.set("Content-Type","application/json")
             let header = {

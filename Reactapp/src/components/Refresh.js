@@ -11,7 +11,7 @@ export const Refresh = ({children}) => {
     const navigate = useNavigate()
     
     const refresh = async(refreshtoken) =>{
-        const url = 'https://django-reactapp-production.up.railway.app/api/refresh/'
+        const url = 'https://django-reactapp.vercel.app/api/refresh/'
         const headers = new Headers()
         headers.set('Content-Type','application/json')
         const header = {

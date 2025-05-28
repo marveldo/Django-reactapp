@@ -33,7 +33,7 @@ export const Todo = () =>{
        
        const Gettask = async(accesstoken) => {
         setisloading(true)
-        let url = `https://django-reactapp-production.up.railway.app/api/tasks/`
+        let url = `https://django-reactapp.vercel.app/api/tasks/`
  
         let  headers = {
           Authorization: `Bearer ${accesstoken}`,

@@ -22,7 +22,7 @@ export const Edittask = () => {
       const [form, formchange] = React.useState({name : '', description: "", is_complete:""})
       const spinner = <Spinner animation="border" role="status"><span className="visually-hidden">Loading...</span></Spinner> 
       const Gettask = async(id, accesstoken) => {
-          let url = `https://django-reactapp-production.up.railway.app/api/task/${id}/`
+          let url = `https://django-reactapp.vercel.app/api/task/${id}/`
           let headers = new Headers()
           headers.set('Authorization', `Bearer ${accesstoken}`)
           headers.set('Content-Type', 'application/json')
@@ -45,7 +45,7 @@ export const Edittask = () => {
           }
       }
       const SubmitForm = async(accesstoken,id) => {
-        const url = `https://django-reactapp-production.up.railway.app/api/task/${id}/`
+        const url = `https://django-reactapp.vercel.app/api/task/${id}/`
         const headers = new Headers()
         headers.set('Authorization', `Bearer ${accesstoken}`)
         headers.set('Content-Type', 'application/json')
