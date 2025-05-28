@@ -1,13 +1,30 @@
 {
-    "builds": [{
-        "src": "Backend/wsgi.py",
-        "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb",  "pythonVersion": "3.9"}
-    }],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "Backend/wsgi.py"
-        }
-    ]
+  "version": 2,
+  "builds": [
+    {
+      "src": "Backend/wsgi.py",
+      "use": "@vercel/python",
+      "config": {
+        "pythonVersion": "3.9",
+        "maxLambdaSize": "15mb"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "Backend/wsgi.py"
+    }
+  ],
+  "env": {
+    "PYTHON_VERSION": "3.9",
+    "DJANGO_SETTINGS_MODULE": "Backend.settings"
+ 
+  },
+  "build": {
+    "env": {
+      "NODE_VERSION": "18.x"
+             
+    }
+  }
 }
